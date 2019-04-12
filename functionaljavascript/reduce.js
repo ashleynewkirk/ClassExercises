@@ -76,7 +76,14 @@ Given an Array of strings, use Array#reduce to create an object that contains th
 
 
 function countWords(inputWords) {
-    return countWords(inputWords);
-
+  return inputWords.reduce(function (prevValue, currValue) {
+    if (prevValue[currValue]) {
+      prevValue[currValue]++;
+    } else {
+      prevValue[currValue] = 1;
+    }
+    return prevValue;
+  }, {});
 }
-module.exports = countWords
+
+module.exports = countWords;

@@ -17,13 +17,14 @@ shoppingList.splice(4,1,'fair trade coffee');
 
 shoppingList.splice(2,2, 'rice', 'beans');
 
-var shoppingCart = []
+//var shoppingCart = []
 
 var shoppingCart = [ shoppingList.pop(5) + ', ' + shoppingList.shift(0)];
 
-var i = shoppingList.length; 
-while (i >= 0) {
-var shoppingCart = [shoppingList.pop(i) + ', '];
+var i = shoppingList.length;  
+while (i >= [0]) {
+shoppingCart = [shoppingList.pop([i]) + ', '];
+[i]-- ;
 }
 
 console.log(shoppingList);

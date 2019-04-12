@@ -15,23 +15,25 @@ var players = [
 });
 console.log(playerMike.firstName);
 
-var rbs = players.filter(function(players){
-    return players.position == 'RB';
+var rbs = players.map(function(players){
+    return players.position === 'RB';
 });
 
-console.log(rbs);
+console.log('The Running Backs are: ' + rbs.firstName + ' ' + rbs.lastName);
 
 var lastName = players.map(function(players){
     return players.lastName;
 });
 
-console.log(lastName);
+console.log('The players last names are: ' +  lastName + ', ');
 
-var fullNames = players.filter(function(student) {
-    return (players.touchdowns > 5)
+var fullNames = players.filter(function(players) {
+    return (players.touchdowns > 5 && players.position == 'RB');
+ }) .map(function(player){
+        return players.firstName + ' ' + players.lastName;
+        });       
 
-}); 
-console.log(fullNames);
+console.log('The players with more than 5 touchdowns are: ' + players.firstName + ' ' + players.lastName) ;
 
 //var runningbacks = players.find(function
 

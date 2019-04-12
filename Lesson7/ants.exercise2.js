@@ -24,11 +24,15 @@ function howManyByHowMany(number){
 	var numbers = howTheyMarch;
 	var hurrah = " hurrah, hurrah \n";
 	var march = "The ants go marching " + numbers;
-  debugger
-	console.log(march + hurrah + march + hurrah + march);
+	debugger 
+	console.log(march + numbers + hurrah + littleOne[i] + hurrah + march);
 }
 
 
+
+function newFunction() {
+	debugger;
+}
 /*Create a new project in your TTS directory titled antsGoMarching
 	- add an index.html file
 	- add a javascript file 

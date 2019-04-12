@@ -26,7 +26,7 @@ function howManyByHowMany(number){
 	var hurrah = " hurrah, hurrah \n";
 	var march = "The ants go marching " + numbers;
   debugger
-	console.log(march + hurrah + march + hurrah + march);
+  console.log(march + numbers + hurrah + littleOne[i] + hurrah + march);
 }
 
 
