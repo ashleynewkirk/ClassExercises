@@ -6,7 +6,7 @@ console.log(header);
 //Get all the section elements
 var section = document.querySelectorAll("section")
 //Get the section element with class="current"
-var current = document.querySelectorAll("section.current")
+var current = document.querySelector("section.current")
 //Get the section that comes after the current section
 var afterCurrent = current.nextElementSibling
 console.log(afterCurrent);
