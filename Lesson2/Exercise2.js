@@ -34,9 +34,6 @@ const course = {
 		}
 	}
 };
-
-
-
 //Get the following values:
 //Name of the course ('JavaScript Applications')
 console.log(course.name);
@@ -53,7 +50,7 @@ console.log(course.preReqs.equipment);
 console.log(course.preReqs.equipment.OSOptions[1]);
 //string listing the OSOptions separated by 'or' ('linux or osx') - Not sure about this one!
 //console.log(course.preReqs.equipment.OSOptions[0] + ' or ' + course.preReqs.equipment.OSOptions.OSOptions[1]);
-//An array of all the students that are using OSX. 
-if(course.students.computer.type == 'osx'){
+//An array of all the students that are using OSX.
+if(course.students.computer.OS[0] == 'OSX'){
     console.log(course.students.name);
 };
