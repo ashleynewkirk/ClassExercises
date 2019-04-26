@@ -1,0 +1,10 @@
+
+Create a for loop iterating fom 1-100, incrementing by 1
+
+    Use an if condition to see if number mod 3 has a emainder of 0. Print fizz.
+    
+    Use another if condition to see if number mod 5 has a remainder of 0. Print buzz. 
+
+    Use another if condition to see if number mod 5 AND  number mod 3 has a remainder of 0. Print fizzbuzz.
+
+    Else just print number .
